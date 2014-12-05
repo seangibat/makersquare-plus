@@ -1,0 +1,14 @@
+{
+  "name": "MakerSquarePlus",
+  "short_name": "MKSP",
+  "manifest_version": 2,
+  "version":"1.2",
+  "description": "Auto-expands all lessons in the MakerSquare learn app.",
+  "permissions": ["tabs", "http://learn.makersquare.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["http://learn.makersquare.com/*"],
+      "js": ["expander.js"]
+    }
+  ]
+}
